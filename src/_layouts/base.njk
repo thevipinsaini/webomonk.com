@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		{% include "src/_includes/head.njk" %}
+	</head>
+	<body>
+
+		{% include "src/_includes/navbar.njk" %}
+
+		<main id="page-content" class="container">
+			{{ content | safe }}
+		</main>
+
+		{% include "src/_includes/footer.njk" %}
+
+		<script src="/js/bootstrap.js"></script>
+		<script>
+			{% set js %}
+			{% include "src/assets/scripts/scripts.js" %}
+			{% endset %}
+			{{ js | jsmin | safe }}
+		</script>
+
+	</body>
+</html>

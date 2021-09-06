@@ -1,0 +1,41 @@
+{
+	"name": "Webomonk",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "npx eleventy",
+		"watch": "npx eleventy --watch",
+		"serve": "npx eleventy --serve",
+		"debug": "npx DEBUG=* eleventy",
+		"clean": "npx rimraf _site"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/brewhousedigital/eleventy-site-template.git"
+	},
+	"author": {
+		"name": "Webomonk",
+		"email": "webomonk@gmail.com",
+		"url": "https://webomonk.com/"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "#"
+	},
+	"homepage": "#",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.12.1",
+		"@11ty/eleventy-navigation": "^0.1.6",
+		"@11ty/eleventy-plugin-rss": "^1.1.1",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+		"@fullhuman/postcss-purgecss": "^4.0.3",
+		"bootstrap-icons": "*",
+		"clean-css": "^4.2.3",
+		"dotenv": "^9.0.0",
+		"luxon": "^1.26.0",
+		"markdown-it": "^12.0.4",
+		"markdown-it-anchor": "^7.1.0",
+		"postcss": "^8.2.14",
+		"slugify": "^1.5.0",
+		"terser": "^5.7.0"
+	}
+}
