@@ -4,6 +4,9 @@ body {
     background-color: #eee;
 }
 
+.blog-main{
+    line-height: 34px !important;
+}
 
 /* Navbar section */
 .nav {

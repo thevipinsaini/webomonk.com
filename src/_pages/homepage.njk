@@ -18,3 +18,24 @@ permalink: /
 </div>
 
 </div>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <!-- blog post -->
+      {%- for post in collections.blogging %}
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <article class="card border-0 rounded-0 position-relative box-shadow zindex-1">
+          <div class="card-type">Article</div>
+          <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="blog-thumb">
+          <div class="card-body">
+            <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">admin</strong>/ on <strong class="text-dark">{{post.data.date}}</strong></div>
+            <h4 class="card-title"><a href="{{post.url}}" class="text-dark">{{post.data.title}}</a></h4>
+            <span class="section-title-border"></span>
+            <p class="card-text">{{post.data.excerpt}}</p>
+          </div>
+          {%- endfor %}
+        </article>
+      </div>
+      
+</section>
