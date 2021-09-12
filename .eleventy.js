@@ -171,13 +171,13 @@ module.exports = function(eleventyConfig) {
 
 
 	// Eleventy will move these files to the _site folder on built
-	eleventyConfig.addPassthroughCopy({"src/assets/images": "images"});
+	eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
 	eleventyConfig.addPassthroughCopy({"src/manifest.json": "manifest.json"});
 	
 	
 	// If you want to have a standalone css file for bootstrap, uncomment this line
 	// eleventyConfig.addPassthroughCopy({"src/_includes/assets/styles/bootstrap.css": "css/bootstrap.css"});
-	eleventyConfig.addPassthroughCopy({"src/assets/scripts/bootstrap.js": "js/bootstrap.js"});
+	eleventyConfig.addPassthroughCopy({"src/assets/scripts/bootstrap.js": "assets/scripts/bootstrap.js"});
 
 
 	/* Markdown Overrides */
@@ -187,7 +187,7 @@ module.exports = function(eleventyConfig) {
 		linkify: true
 	}).use(markdownItAnchor, {
 		permalink: true,
-		permalinkClass: "direct-link",
+		permalinkClass: "anchor",
 		permalinkSymbol: "#"
 	});
 	eleventyConfig.setLibrary("md", markdownLibrary);

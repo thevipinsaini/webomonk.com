@@ -2,29 +2,27 @@
 layout: base.njk
 ---
 
-
-<div class="row my-4"> {# Blog Main Start #}
+<div class="row my-4">
+  {# Blog Main Start #}
   <div class="col-md-8 p-3 blog-main bg-white rounded shadow-lg">
-    <div class="blog-post">
+    <div class="article blog-post">
+      <img src="/assets/images/content/{{ page.fileSlug }}/thumbnail.png" class="img-fluid rounded"/>
       <h1 class="blog-post-title">{{ title }}</h1>
       <p class="blog-post-meta">{{ page.date | readableDate }} by <a href="#">{{ metadata.author }}</a>
       </p>
-
       {{ content | safe }}
     </div>
-  </div> {# Blog Main End #}
+  </div>
+  {# Blog Main End #}
 
-
-
-  <aside class="col-md-4 blog-sidebar"> {# Sidebar Start #}
+  <aside class="col-md-4 blog-sidebar">
+    {# Sidebar Start #}
     <div class="p-3 mb-3 bg-white rounded shadow-lg">
       <h4 class="font-italic">About</h4>
       <p class="mb-0">webomonk.com is a content-focused website. We write high-quality technology articles. Which helps you in learning new things and apply those actionable tactics to your business!
 
 </p>
     </div>
-
-   
 
     <div class="p-3 bg-white rounded shadow-lg">
       <h4 class="font-italic">Elsewhere</h4>
@@ -40,7 +38,7 @@ layout: base.njk
         </li>
       </ol>
     </div>
-  </aside> {# Sidebar End #}
-  
+  </aside>
+  {# Sidebar End #}
 
 </div>

@@ -6,7 +6,7 @@
 		"watch": "npx eleventy --watch",
 		"serve": "npx eleventy --serve",
 		"debug": "npx DEBUG=* eleventy",
-		"clean": "npx rimraf _site"
+		"clean": "npx rimraf _site && npx eleventy --serve"
 	},
 	"repository": {
 		"type": "git",

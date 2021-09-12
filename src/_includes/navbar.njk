@@ -1,38 +1,37 @@
-<nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="/">Webomonk</a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
+<nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+        Webomonk
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active">
+                    Home
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about/" class="nav-link active">
+                    About
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact/" class="nav-link active">
+                    Contact
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link active">
+                    Write For Us
+                </a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
-    <section class="home">
-    </section>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
-
+</nav>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
